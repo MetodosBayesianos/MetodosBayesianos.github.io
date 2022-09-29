@@ -21,7 +21,7 @@ El 4 y 5 se agosto 2023 en el NODO tecnológico, La Banda, Santiago del Estero, 
 
 [![logo](https://raw.githubusercontent.com/glandfried/images/master/logos/CBP.png)](https://bayesdelsur.com.ar/)
 
-### Organizado por la [**Comunidad Bayesiana Plurinacional**](https://comunidadbayesianaplurinacional.github.io/).
+### Organizado por la [**Comunidad Bayesiana Plurinacional**](https://bayesplurinacional.github.io/).
 
 ![com](https://raw.githubusercontent.com/glandfried/images/master/whipalaNico.jpeg)
 
