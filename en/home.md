@@ -1,5 +1,8 @@
 ## Bayesian Methods Lab
 
+This is the Bayesian Methods Lab.
+We work on the technical, practical and theoretical aspects of the Bayesian approach to probability theory, developing methods to optimally solve empirical problems in industry, politics and ecology.
+
 [Empirical Truths Seminar](https://MetodosBayesianos.github.io/seminario) |  [Pacha Suyus Proyect](https://MetodosBayesianos.github.io/apuestas) | [PaqtaRayku Laboratory](https://MetodosBayesianos.github.io/taller)
 :-------------------------:|:-------------------------:|:-------------------------:
 Epistemology and methodology | Methodology and applications | Applications and tools

@@ -1,6 +1,9 @@
 [English](https://MetodosBayesianos.github.io/en/home)
 
-## Actividades
+## Laboratorio de Métodos Bayesianos
+
+Este es el Laboratorio de Métodos Bayesianos.
+Trabajamos en los aspectos técnicos, prácticos y teóricos del enfoque bayesiano de la teoría de la probabilidad, desarrollando métodos para resolver de forma óptima problemas empíricos en la industria, la política y la ecología.
 
 [Seminario Verdades Empíricas](https://MetodosBayesianos.github.io/seminario) |  [Apuestas Pacha Suyus](https://MetodosBayesianos.github.io/apuestas) | [Taller PaqtaRayku](https://MetodosBayesianos.github.io/taller)
 :-------------------------:|:-------------------------:|:-------------------------:
