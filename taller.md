@@ -10,7 +10,7 @@ Si bien la aplicación estricta de la teoría de la probabilidad (enfoque Bayesi
 
 ---
 
-Contacto `bayesdelsur@gmail.com`
+Contact `glandfried@dc.uba.ar`
 
 
 

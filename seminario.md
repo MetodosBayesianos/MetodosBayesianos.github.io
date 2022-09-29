@@ -135,14 +135,17 @@ Sin implicar exclusión, se requieren algunos conocimiento mı́nimos de álgebr
 0. [Parallel Bayesian Online Deep Learning for Click-Through Rate Prediction in Tencent Advertising System](https://arxiv.org/abs/1707.00802)
 0. [Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review](https://arxiv.org/abs/1805.00909)
 
-
+<!--
 <p align="center">
   <img src="https://raw.githubusercontent.com/glandfried/images/master/pachacuteckoricancha.jpg" style="width: 30%;"/>
-</p>
+</p>-->
 
-Contactos a `bayesdelsur@gmail.com`
+---
 
+Contact `glandfried@dc.uba.ar`
+
+<!--
 <p align="center">
   <img src="https://raw.githubusercontent.com/glandfried/images/master/pEQb.png" style="width: 50%;"/>
-</p>
+</p>-->
 
