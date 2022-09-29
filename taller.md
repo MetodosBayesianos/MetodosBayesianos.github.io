@@ -1,4 +1,4 @@
-## Framework causal
+## Taller PaqtaRayku
 
 Estamos trabajando en el desarrollo de una herremienta que permita la especificación colaborativa de modelos causales alternativos en competencia que surgen en los procesos judiciales, políticos e históricos con el objetivo de facilitar su evaluación intersubjetiva. En esta etapa el trabajo requiere conocimientos en programación. Tenemos una modalidad de trabajo remoto. En una siguiente etapa se llevará adelante tareas colaborativas que no requieren ningún tipo de conocimiento específico. Si querés participar en alguna de estas actividades, envianos tu CV.
 

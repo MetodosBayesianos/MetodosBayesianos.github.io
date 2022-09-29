@@ -1,4 +1,4 @@
-## Apuestas Pacha Suyus
+## Modelos Pacha Suyus
 
 ### El conocimiento empírico emerge como la vida
 
