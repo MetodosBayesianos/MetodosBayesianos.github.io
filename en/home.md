@@ -1,7 +1,7 @@
 ## Bayesian Methods Lab
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/glandfried/images/master/logos/blecha.png" style="width: 28%;"/>
+  <img src="https://raw.githubusercontent.com/glandfried/images/master/logos/blecha.png" style="width: 32%;"/>
 </p>
 
 This is the Bayesian Methods Lab.

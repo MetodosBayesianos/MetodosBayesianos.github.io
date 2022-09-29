@@ -3,7 +3,7 @@
 ## Laboratorio de Métodos Bayesianos
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/glandfried/images/master/logos/blecha.png" style="width: 28%;"/>
+  <img src="https://raw.githubusercontent.com/glandfried/images/master/logos/blecha.png" style="width: 32%;"/>
 </p>
 
 Este es el Laboratorio de Métodos Bayesianos.
