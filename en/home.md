@@ -7,7 +7,7 @@ We work on the technical, practical and theoretical aspects of the Bayesian appr
 :-------------------------:|:-------------------------:|:-------------------------:
 Epistemology and methodology | Methodology and applications | Applications and tools
 Conceptual foundation of intersubjective agreements in contexts of uncertainty | Evaluation of real historical alternative causal models | Tools for collaborative specification of competing causal models
-[![Comunidad](https://raw.githubusercontent.com/glandfried/images/master/logos/pEQb_400.png)](https://MetodosBayesianos.github.io/seminario) | [![Comunidad](https://raw.githubusercontent.com/glandfried/images/master/logos/blecha.png)](https://MetodosBayesianos.github.io/apuestas) | [![Comunidad](https://raw.githubusercontent.com/glandfried/images/master/logos/balanza_cerca.png)](https://MetodosBayesianos.github.io/taller)
+[![Comunidad](https://raw.githubusercontent.com/glandfried/images/master/logos/pEQb_400.png)](https://MetodosBayesianos.github.io/seminario) | [![Comunidad](https://raw.githubusercontent.com/glandfried/images/master/logos/PdivB.png)](https://MetodosBayesianos.github.io/apuestas) | [![Comunidad](https://raw.githubusercontent.com/glandfried/images/master/logos/balanza_cerca.png)](https://MetodosBayesianos.github.io/taller)
 
 ## Towards the [**Plurinational Bayesian Congress**](https://bayesdelsur.com.ar/index_en.html) 2023.
 
