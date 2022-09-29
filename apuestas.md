@@ -2,7 +2,7 @@
 
 ### El conocimiento empírico emerge como la vida
 
-![p-b](../static/tapa_proyecto.png)
+![p-b](https://raw.githubusercontent.com/glandfried/images/master/output/tapa_proyecto.png)
 
 El enfoque Bayesiano de la probabilidad actualiza de forma óptima las creencias de todas y cada una de las hipótesis, de acuerdo a la evidencia empírica y formal (datos y modelos causales). Esta lógica es paraconsistente debido a que bajo incertidumbre se hace necesario creer al mismo tiempo en A y no A para que la sorpresa, única fuente de información, actúe como filtro de la creencia previa. Este proceso de selección (secuencia de filtros) es como el evolutivo (secuencia de reproducción y supervivencia) de naturaleza multiplicativa: un solo cero en la secuencia genera una extinción irreversible. Por ello existe una ventaja a favor de las formas de vida y del conocimiento empírico que reducen las fluctuaciones por diversificación, cooperación, especialización y coexistencia. **El Proyecto Pacha Suyus está enfocado en la evaluación de los modelos causales alternativos reales de nuestras historias, en las ciencias sociales, la política y la ecología.**
 
