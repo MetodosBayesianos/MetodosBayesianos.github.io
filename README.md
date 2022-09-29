@@ -25,7 +25,7 @@ El 4 y 5 se agosto 2023 en el NODO tecnológico, La Banda, Santiago del Estero, 
 
 ![com](https://raw.githubusercontent.com/glandfried/images/master/whipalaNico.jpeg)
 
-### Con apoyo del grupo [**Bayes de las Provincias Unidas del Sur**](https://bayesplurinacional.github.io/)
+### Con apoyo del grupo [**Bayes de las Provincias Unidas del Sur**](https://bayesdelasprovinciasunidasdelsur.github.io/)
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/glandfried/images/master/inti.png" style="width: 32%;"/>
