@@ -1,5 +1,3 @@
-## Laboratorios de Métodos Bayesianos
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/MetodosBayesianos/static/main/logos/logo_cerca.png" style="width: 66%;"/>
 </p>
