@@ -84,13 +84,13 @@
                 <p>
                 La teoría de la probabilidad puede resumirse en dos simples reglas.
                 La regla de la suma garantiza no perder creencia cuando la distribuimos entre hipótesis mutuamente contradictorias: predecir sumando la contribución de todas las hipótesis recupera la creencia total.
-                Y la regla del producto (o condicional) garantiza la coherencia de las probabilidades con la información disponible: preservamos solamente la creencia previa que sigue siendo compatible con los nuevos datos (y la que sobrevive se la considera como el nuevo 100%).
+                Y la regla del producto (o condicional) garantiza la coherencia con la información disponible: preservamos solamente la creencia previa que sigue siendo compatible con los nuevos datos (y la que sobrevive se la considera nuestra nueva creencia).
                 </p>
 
                 <p>
                 En las últimas décadas se han desarrollado una gran cantidad de algoritmo de aprendizaje automático.
                 Bajo este marco, cada nuevo problema se "resuelve" con alguno de los algoritmos ya existentes.
-                Si bien este flujo de trabajo ha sido exitoso para muchas tareas, tiene la desventaja de ser inflexible a la hora de considerar las especificidades propias de cada problema.
+                Si bien este flujo de trabajo ha sido exitoso para muchas tareas, es inflexible a la hora de considerar las especificidades propias de cada problema.
                 Por ejemplo, en él se dificulta la inferencia causal, lo que produce serias dificultades para pronosticar el efecto que las intervenciones humanas tienen sobre los sistemas naturales.
                 </p>
 
@@ -103,11 +103,11 @@
                 <p>
                 En las últimas décadas se fueron desarrollando técnicas que permiten crear y evaluar modelos a medida del problema, de forma intuitiva.
                 Con ellas podemos: expresar de forma gráfica las relaciones causales entre las variables; descomponer las reglas de la probabilidad como mensajes entre los nodos de la red causal; y delegar la inferencia a los lenguajes de programación probabilı́stica.
-                Con ellas podemos evaluar correctamente los argumentos causales en ´base a la evidencia.
+                Con ellas podemos evaluar correctamente los argumentos causales en base a la evidencia.
                 </p>
 
                 <p>
-                Nuestro objetivo general está orientado a poner en valor el conocimiento experto a través de herramientas ya existentes que permiten especificar matemáticamente los argumentos causales expresados en lenguaje natural en base a métodos gráficos que ofrecen un lenguaje intuitivo para expresar y evaluar correctamente las relaciones (probabilísticas) entre causas y efectos.
+                Las aplicaciones de los Laboratorios de Métodos Bayesianos están orientadas a poner en valor el conocimiento experto a través de herramientas ya existentes que permiten especificar matemáticamente los argumentos causales expresados en lenguaje natural en base a métodos gráficos que ofrecen un lenguaje intuitivo para expresar y evaluar correctamente las relaciones (probabilísticas) entre causas y efectos relevantes.
                 </p>
 
                 <h5 class="header col s12 light">
@@ -115,11 +115,15 @@
                 </h5>
 
                 <p>
-                A diferencia de los estimadores bayesianos simples que propagan la información en una sola dirección, utilizando la última distribución de creencias (posterior) como la creencia previa (prior) del siguiente evento, los modelos de causales de historia completa propagan toda la información histórica a través de toda la red de eventos, proporcionando estimaciones con baja incertidumbre en todo momento, ofreciendo estimaciones iniciales fiables, y garantizando la comparabilidad entre las estimaciones que están distantes en el tiempo y el espacio.
+                Existe una creencia muy extendida dentro de los investigadores que utilizan métodos bayesianos que la última distribución de creencias (posterior) debe utilizarse como creencia previa del siguiente evento (prior).
+                Esto es incorrecto, pues propaga la información en una sola dirección, del pasado al futuro.
+                La inferencia, por el contrario, siempre puede realizarse en todas las direcciones.
+                Esto hace que en los modelos causales de historia completa sea necesario propagar la información a través de toda la red histórica de eventos.
+                De esta forma se obtienen estimaciones con baja incertidumbre en todo momento, ofreciendo estimaciones iniciales fiables, y garantizando la comparabilidad entre las estimaciones que están distantes en el tiempo y el espacio.
                 </p>
 
                 <h6 class="header col s12 light">
-                Ejemplo: estimador de habilidad de la industria del videojuego
+                Ejemplo 1: estimador de habilidad de la industria del videojuego
                 </h6>
 
                 <p>
@@ -133,12 +137,13 @@
                 </div>
 
                 <h6 class="header col s12 light">
-                Ejemplo: sistema de recomendación comercial.
+                Ejemplo 2: sistema de recomendación comercial.
                 </h6>
 
                 <p>
-                El método típico de recomendación de productos comerciales (cine, música, etc),  basado en una descomposición de valor singular, puede ser resuelto usando métodos bayesianos que computan la incertidumbre de las estimaciones.
-                Además, la incorporación de metadatos de las personas y los productos permite reducir la incertidumbre respecto de los  gustos de los usuarios nuevos.
+                Los modelos típicos de recomendación de productos comerciales (cine, música, etc) están basados en la descomposición de valores singular.
+                Este modelo puede ser resuelto usando métodos bayesianos, que computan la incertidumbre de las variables ocultas, como los gustos de las personas y las características de los productos.
+                La incorporación de metadatos de las personas y los productos permite predecir razonablemente los gustos de usuarios completamente nuevos.
                 La inferencia se hace de forma eficiente mediante pasaje de mensajes aproximados analíticamente.
                 </p>
 
@@ -152,24 +157,28 @@
 
                 <p>
                 Los métodos clásicos de aprendizaje estadístico tienen serias dificultades para evaluar modelos alternativos.
-                Como consecuencia de optimizar funciones de costo ad-hoc para seleccionar una única hipótesis del espacio, se produce una consecuencias negativas bien conocidas en probabilidad: el sobre ajuste (o overfitting).
-                Las técnicas que se apartan de la aplicación estricta de la probabilidad tienden a favorecer los modelos más complejos, que terminan aprendiendo detalles irrelevantes, y reducen su desempeño a la hora de predecir datos nuevos.
+                Debido a que usan funciones de costo ad-hoc para seleccionar una única hipótesis del espacio, se produce una consecuencia negativa bien conocidas en probabilidad: el sobre ajuste (o overfitting).
+                Las técnicas que se apartan de la aplicación estricta de la probabilidad tienden a favorecer los modelos más complejos, que terminan aprendiendo detalles irrelevantes, reduciendo su desempeño a la hora de predecir datos nuevos.
                 </p>
 
+                <h6 class="header col s12 light">
+                Ejemplo 3: regresión lineal bayesiana
+                </h6>
+
                 <p>
-                Por el contrario, la aplicación estricta de las reglas de la probabilidad, al garantizar una evaluación correcta de las hipótesis en base a la evidencia disponible, favorece naturalmente los modelos que tienen la complejidad necesaria y suficiente.
-                Si ajustamos un ciclo de una sinoidal con polinomios de grado creciente, el enfoque clásico (por máxima verosimilitud) va a favorecer al modelo más complejo, mientras que la aplicación de las reglas de la probabilidad favorece a los modelos con una complejidad equilibrada, que mejor predicen datos nuevos.
+                Por el contrario, la aplicación estricta de las reglas de la probabilidad (enfoque bayesiano), evalúa correctamente los modelos alternativos en base a la evidencia disponible, favoreciendo naturalmente los que tienen la complejidad mínima y necesaria.
+                Por ejemplo, si ajustamos el ciclo de una sinoidal con polinomios de grado creciente el enfoque bayesiano valora a los modelos según el desempeño que tienen sobre datos nuevos, evitando el problema del sobre ajuste de los enfoques clásicos.
                 </p>
 
                 <div class="figcontainer">
                     <div class="figure">
                     <img class="responsive-img" src="https://raw.githubusercontent.com/MetodosBayesianos/static/a581f69065627b324692831526cae0adffbaa40b/ejemplos/regresiones.svg" alt="Figure 1">
-                    <figcaption>Regresión</figcaption>
+                    <figcaption>Regresión bayesiana</figcaption>
                     </div>
 
                     <div class="figure">
                     <img class="responsive-img" src="https://raw.githubusercontent.com/MetodosBayesianos/static/a581f69065627b324692831526cae0adffbaa40b/ejemplos/regresiones-evaluacion.svg" alt="Figure 2">
-                    <figcaption>Evaluación</figcaption>
+                    <figcaption>Evaluación bayesiana</figcaption>
                     </div>
                 </div>
 
@@ -178,7 +187,7 @@
                 </p>
 
                 <h6 class="header col s12 light">
-                Ejemplo: evaluación de test diagnóstico sin gold standard
+                Ejemplo 4: evaluación de test diagnóstico sin gold standard
                 </h6>
 
                 <p>
@@ -193,29 +202,36 @@
                 </div>
 
                 <p>
-                Este modelo supone que los test son independientes entre sí.
-                Esta suposición puede ser evaluada proponiendo un modelo alternativo que incorpora una variable adiciones que representa nuestra incertidumbre respecto a la covarianza entre test.
-                El nuevo modelo será aceptado solo si la complejidad añadida mejora suficientemente la predicción.
+                Donde \(p_c\) representa la prevalencia en la comunidad, \(e_i\) el estado del individuo, \(r_{it}\) el resultado del test \(t\) sobre el individuo, y \(s_{ot}\) representa la sensibilidad o especificidad según el caso.
+                <p>
+
+                <p>
+                Este modelo parece bastante complejo, pero supone que los test son independientes entre sí.
+                Esta suposición puede ser evaluada proponiendo un modelo causal alternativo que incorpore una variable adiciones que represente la covarianza o correlación entre test.
+                Este complejidad añadida solo será aceptada si supera al modelo más simple en términos del su desempeño predictivo sobre datos nuevos.
                 </p>
 
-                <!--<p>
-                En estos casos no hay demasiada duda respecto de las relaciones causa-efecto ente las variables.
-                Solo cuando no es posible por ningún medio conoce la estructura del modelo causal y no se encuentran alternativas que permitan distinguir las dirección de las relaciones causales, es necesario
-                </p>-->
+                <p>
+                Solo cuando no es posible por ningún medio conocer la estructura del modelo causal y no se encuentran alternativas que permitan distinguir las dirección de las relaciones causales, es necesario introducir experimentos para identificar el modelo y el efecto causal.
+                </p>
 
                 <h5 class="header col s12 light">
                 3. Toma de decisiones.
                 </h5>
 
                 <p>
-                El modelo clásico de toma de decisiones (teoría de utilidad esperada y sus descendientes) asume que lo que le ocurre a las personas en el tiempo se puede estimar usando la esperanza.
-                Este supuesto es falso en la inmensa mayoría de los casos de la vida real, especialmente cuando lo sistemas que analizamos están fuera del equilibrio como ocurre con los sistemas vivos en general.
-                Su reciente reformulación ergódica pone finalmente a la teoría de la decisión en línea con los resultados de la teoría de la información, que ya mostraba cómo computar la apuesta óptima, y generaliza este resultado.
+                El modelo clásico de toma de decisiones (teoría de utilidad esperada y sus descendientes) asume que lo que le ocurre a las personas en el tiempo se puede estimar usando la esperanza de los posibles estados.
+                Este supuesto es falso en la inmensa mayoría de los casos, especialmente cuando analizamos sistemas fuera del equilibrio como el de la vida.
+                Su reciente reformulación ergódica pone finalmente a la teoría de la decisión en línea con la teoría de la información, que ya mostraban cómo computar la apuesta óptima dada la función de costo de la teoría de la probabilidad.
+                La reformulación ergódica permite además computar la apuesta óptima cualquiera sea la función de costo.
                 </p>
 
+                <h6 class="header col s12 light">
+                Ejemplo 5: apuestas óptimas
+                </h6>
+
                 <p>
-                Supongamos que tenemos una moneda no sesgada y que una casa de apuestas ofrece pagos \(Q_c=3\) por Caras y \(Q_s=1.2\) por Secas y que nos vemos en la obligación de apostar todos sus recursos, asignando una proporción \(b_c = b\) a Cara y \(b_s = 1 - b\) a Seca.
-                ¿Cuánto apostarías a cada opción?
+                Supongamos que tenemos una moneda, que una casa de apuestas ofrece pagos \(Q_c=3\) por Caras y \(Q_s=1.2\) por Secas y que nos vemos en la obligación de apostar todos sus recursos, asignando una proporción \(b_c = b\) a Cara y \(b_s = 1 - b\) a Seca.
                 Si apostamos todo a Caras y sale Secas, perdemos todos.
                 A pesar de que la casa de apuestas pague más por Caras que por Secas, nos vemos en la obligación de apostar algo a Secas también. ¿Pero cuánto?
                 Si nuestros recursos iniciales son \(\omega_0\), los recursos que obtenemos con una apuestas \(b \in [0,1]\) después de una Cara y una Seca es el producto de nuestros resultados.
@@ -233,9 +249,9 @@
                 </p>
 
                 <p>
-                En este caso, sin embargo, no podemos ganar este juego individualmente debido a que las ganancias de 50% con Caras \(1.5 = Q_c \, b\) no alcanza para compensar las caídas de 40\% que sufrimos con Secas \(0.6 = Q_s \, (1-b)\).
-                Incluso con el comportamiento óptimo, individualmente las trayectorias de los recursos caen a una tasa cercana a 5%.
-                A pesar de que la diversificación individual no es suficiente para ganar este juego, la vida encontró estrategias para florecer en casos como estos, reduciendo aun más las fluctuaciones individuales mediante cooperación
+                A pesar de que la esperanza de los resultados de este comportamiento óptimo sea positiva \((1.5+0.6)/2=1.05\), (es la predicción que hace la teoría de utilidad esperada con una utilidad lineal), las trayectorias individuales caen a una tasa cercana a 5% (ver figura abajo).
+                Esto ocurre debido a que las ganancias de 50% con Caras, \(1.5 = Q_c \, b\), no alcanza para compensar las caídas de 40\% que sufrimos con Secas, \(0.6 = Q_s \, (1-b)\).
+                La vida encontró estrategias para florecer en casos como estos, reduciendo aun más las fluctuaciones individuales mediante cooperación
                 </p>
 
                 <div class="center">
