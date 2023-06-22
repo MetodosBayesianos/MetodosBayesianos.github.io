@@ -10,6 +10,19 @@
       <!--Let browser know website is optimized for mobile-->
       <link rel="stylesheet" href="../css/others.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!--Latex Mode-->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      <style>
+        .figcontainer {
+        display: flex;
+        justify-content: center;
+        }
+
+        .figure {
+        margin: 10px;
+        }
+      </style>
     </head>
 
     <body>
@@ -28,7 +41,11 @@
         <nav class="deep-orange" role="navigation" style="position:fixed">
             <div class="nav-wrapper container"><a id="logo-container" href="../es/index.html" class="brand-logo"><em>Métodos</em></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="../es/apuestas.html">Apuestas</a></li>
+                <li><a href="../es/fundamental.html"><b>Elementos</b></a></li>
+                <li><a href="../es/comunidad.html"><b>Comunidad</b></a></li>
+                <li><a href="../es/aplicaciones.html"><b>Aplicaciones</b></a></li>
+                <li><a href="../es/formacion.html"><b>Formación</b></a></li>
+                <li><a href="../es/competencia.html"><b>Competencia</b></a></li>
                 <li><a class="dropdown-button" href="#!" data-target="dropdown0"><i class="fa fa-language"></i></a></li>
             </ul>
         </nav>
@@ -38,7 +55,11 @@
                 <li><a class="dropdown-button" href="#!" data-target="dropdown1"><i class="fa fa-language"></i></a></li>
                 <li><a href="../es/index.html">Métodos Bayesianos</a></li>
                 <li><a href=""></a></li>
-                <li><a href="../es/apuestas.html">&#x2022; Apuestas</a></li>
+                <li><a href="../es/fundamental.html">&#x2022; Elementos</a></li>
+                <li><a href="../es/comunidad.html">&#x2022; Comunidad</a></li>
+                <li><a href="../es/aplicaciones.html">&#x2022; Aplicaciones</a></li>
+                <li><a href="../es/formacion.html">&#x2022; Formación</a></li>
+                <li><a href="../es/competencia.html">&#x2022; Competencia</a></li>
             </ul>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             </div>
@@ -50,24 +71,188 @@
             <div class="container" >
             <br><br>
 
-                <h4 class="header col s12 light">Apuestas de la vida</h4>
+                <h4 class="header col s12 light">Aplicaciones</h4>
+
+                <p>
+                Los métodos bayesianos computan la incertidumbre óptima dada la información disponible en todos los campos de la ciencia.
+                </p>
+
+                <p>
+                Si bien la teoría de la probabilidad se conoce desde finales del siglo 18, y ha sido adoptada desde entonces como sistema de razonamiento en todas las ciencias empíricas, no fue posible aplicar sus reglas de forma estricta (que obligan a evaluar todo el espacio de hipótesis) hasta que en las vísperas del siglo 21 se produce el enorme crecimiento de la capacidad de cómputo.
+                </p>
+
+                <p>
+                La teoría de la probabilidad puede resumirse en dos simples reglas.
+                La regla de la suma garantiza no perder creencia cuando la distribuimos entre hipótesis mutuamente contradictorias: predecir sumando la contribución de todas las hipótesis recupera la creencia total.
+                Y la regla del producto (o condicional) garantiza la coherencia de las probabilidades con la información disponible: preservamos solamente la creencia previa que sigue siendo compatible con los nuevos datos (y la que sobrevive se la considera como el nuevo 100%).
+                </p>
+
+                <p>
+                En las últimas décadas se han desarrollado una gran cantidad de algoritmo de aprendizaje automático.
+                Bajo este marco, cada nuevo problema se "resuelve" con alguno de los algoritmos ya existentes.
+                Si bien este flujo de trabajo ha sido exitoso para muchas tareas, tiene la desventaja de ser inflexible a la hora de considerar las especificidades propias de cada problema.
+                Por ejemplo, en él se dificulta la inferencia causal, lo que produce serias dificultades para pronosticar el efecto que las intervenciones humanas tienen sobre los sistemas naturales.
+                </p>
+
+                <p>
+                Son varias las ventajas de definir los modelos en base a una interpretación causal.
+                Por un lado, permite expresar el conocimiento del mundo de una forma intuitiva, siguiendo naturalmente la historia detrás del argumento causal.
+                Pero fundamentalmente, la especificación gráfica de la interpretación causal codifica en sí misma la información que los eventuales cambios en alguno de los mecanismos causales produce en la topología del modelo, permitiendo predecir el efecto de las intervenciones externas.
+                </p>
+
+                <p>
+                En las últimas décadas se fueron desarrollando técnicas que permiten crear y evaluar modelos a medida del problema, de forma intuitiva.
+                Con ellas podemos: expresar de forma gráfica las relaciones causales entre las variables; descomponer las reglas de la probabilidad como mensajes entre los nodos de la red causal; y delegar la inferencia a los lenguajes de programación probabilı́stica.
+                Con ellas podemos evaluar correctamente los argumentos causales en ´base a la evidencia.
+                </p>
+
+                <p>
+                Nuestro objetivo general está orientado a poner en valor el conocimiento experto a través de herramientas ya existentes que permiten especificar matemáticamente los argumentos causales expresados en lenguaje natural en base a métodos gráficos que ofrecen un lenguaje intuitivo para expresar y evaluar correctamente las relaciones (probabilísticas) entre causas y efectos.
+                </p>
+
+                <h5 class="header col s12 light">
+                1. Modelos causales de historia completa
+                </h5>
+
+                <p>
+                A diferencia de los estimadores bayesianos simples que propagan la información en una sola dirección, utilizando la última distribución de creencias (posterior) como la creencia previa (prior) del siguiente evento, los modelos de causales de historia completa propagan toda la información histórica a través de toda la red de eventos, proporcionando estimaciones con baja incertidumbre en todo momento, ofreciendo estimaciones iniciales fiables, y garantizando la comparabilidad entre las estimaciones que están distantes en el tiempo y el espacio.
+                </p>
+
+                <h6 class="header col s12 light">
+                Ejemplo: estimador de habilidad de la industria del videojuego
+                </h6>
+
+                <p>
+                Hemos desarrollado la primera implementación del estimador de habilidad estado del arte de la industria del video en los tres lenguajes de programación científica más importantes (Python, Julia y R).
+                A diferencia de las redes neuronales que tienen estructuras regulares, las redes causales que emerge en una videojuego adquiere típicamente una estructura irregular compleja con millones de variables.
+                Algoritmos de inferencia eficiente, de pasaje de mensajes entre los nodos de la red y de aproximación analítica de las distribuciones intratables, permite resolver la inferencia histórica mediante unas pocas iteraciones lineales sobre los datos.
+                </p>
+
+                <div class="center">
+                    <img class="responsive-img" src="https://raw.githubusercontent.com/glandfried/TrueSkillThroughTime/68e432bb634b85442dd8c226b3c3a3b7f02ad0bf/static/atp.svg" alt="ATP" style="width: 85%">
+                </div>
+
+                <h6 class="header col s12 light">
+                Ejemplo: sistema de recomendación comercial.
+                </h6>
+
+                <p>
+                El método típico de recomendación de productos comerciales (cine, música, etc),  basado en una descomposición de valor singular, puede ser resuelto usando métodos bayesianos que computan la incertidumbre de las estimaciones.
+                Además, la incorporación de metadatos de las personas y los productos permite reducir la incertidumbre respecto de los  gustos de los usuarios nuevos.
+                La inferencia se hace de forma eficiente mediante pasaje de mensajes aproximados analíticamente.
+                </p>
+
+                <div class="center">
+                    <img class="responsive-img" src="https://raw.githubusercontent.com/MetodosBayesianos/static/355b214a279cc609491c493d17d66d52711292db/modelos/recomendacion.svg" alt="recomendacion" style="width: 60%">
+                </div>
+
+                <h5 class="header col s12 light">
+                2. Evaluación de modelos causales alternativos
+                </h5>
+
+                <p>
+                Los métodos clásicos de aprendizaje estadístico tienen serias dificultades para evaluar modelos alternativos.
+                Como consecuencia de optimizar funciones de costo ad-hoc para seleccionar una única hipótesis del espacio, se produce una consecuencias negativas bien conocidas en probabilidad: el sobre ajuste (o overfitting).
+                Las técnicas que se apartan de la aplicación estricta de la probabilidad tienden a favorecer los modelos más complejos, que terminan aprendiendo detalles irrelevantes, y reducen su desempeño a la hora de predecir datos nuevos.
+                </p>
+
+                <p>
+                Por el contrario, la aplicación estricta de las reglas de la probabilidad, al garantizar una evaluación correcta de las hipótesis en base a la evidencia disponible, favorece naturalmente los modelos que tienen la complejidad necesaria y suficiente.
+                Si ajustamos un ciclo de una sinoidal con polinomios de grado creciente, el enfoque clásico (por máxima verosimilitud) va a favorecer al modelo más complejo, mientras que la aplicación de las reglas de la probabilidad favorece a los modelos con una complejidad equilibrada, que mejor predicen datos nuevos.
+                </p>
+
+                <div class="figcontainer">
+                    <div class="figure">
+                    <img class="responsive-img" src="https://raw.githubusercontent.com/MetodosBayesianos/static/a581f69065627b324692831526cae0adffbaa40b/ejemplos/regresiones.svg" alt="Figure 1">
+                    <figcaption>Regresión</figcaption>
+                    </div>
+
+                    <div class="figure">
+                    <img class="responsive-img" src="https://raw.githubusercontent.com/MetodosBayesianos/static/a581f69065627b324692831526cae0adffbaa40b/ejemplos/regresiones-evaluacion.svg" alt="Figure 2">
+                    <figcaption>Evaluación</figcaption>
+                    </div>
+                </div>
+
+                <p>
+                Cuando evaluamos los polinomios de grado creciente (de 0 a 9) encontramos que: 1. los modelos con complejidad menor a la necesaria son rechazados; 2. el modelo con la complejidad mínima y suficiente (grado 3) se ve favorecido; 3. los modelos con complejidad mayor a la necesaria no se rechazan del todo.
+                </p>
+
+                <h6 class="header col s12 light">
+                Ejemplo: evaluación de test diagnóstico sin gold standard
+                </h6>
+
+                <p>
+                La comparación de modelos causales es especialmente relevante en áreas sensibles como en ciencias forenses, epidemiología, entre otras.
+                Un problema básico es la evaluación de test diagnósticos de enfermedades, como covid o chagas.
+                Cuando no existe un test de referencia perfecto (gold standard) los test deben evaluarse simultáneamente utilizando modelos probabilísticos en los que el estado de la enfermedad se considera como variable oculta.
+                Uno de los modelos básicos se específica de la siguiente manera.
+                </p>
+
+                <div class="center">
+                    <img class="responsive-img" src="https://raw.githubusercontent.com/MetodosBayesianos/static/687ecf073c0831c73d2fdad1d1c5b4c0723a0b02/modelos/diagnostico.svg" alt="recomendacion" style="width: 50%">
+                </div>
+
+                <p>
+                Este modelo supone que los test son independientes entre sí.
+                Esta suposición puede ser evaluada proponiendo un modelo alternativo que incorpora una variable adiciones que representa nuestra incertidumbre respecto a la covarianza entre test.
+                El nuevo modelo será aceptado solo si la complejidad añadida mejora suficientemente la predicción.
+                </p>
+
+                <!--<p>
+                En estos casos no hay demasiada duda respecto de las relaciones causa-efecto ente las variables.
+                Solo cuando no es posible por ningún medio conoce la estructura del modelo causal y no se encuentran alternativas que permitan distinguir las dirección de las relaciones causales, es necesario
+                </p>-->
+
+                <h5 class="header col s12 light">
+                3. Toma de decisiones.
+                </h5>
+
+                <p>
+                El modelo clásico de toma de decisiones (teoría de utilidad esperada y sus descendientes) asume que lo que le ocurre a las personas en el tiempo se puede estimar usando la esperanza.
+                Este supuesto es falso en la inmensa mayoría de los casos de la vida real, especialmente cuando lo sistemas que analizamos están fuera del equilibrio como ocurre con los sistemas vivos en general.
+                Su reciente reformulación ergódica pone finalmente a la teoría de la decisión en línea con los resultados de la teoría de la información, que ya mostraba cómo computar la apuesta óptima, y generaliza este resultado.
+                </p>
+
+                <p>
+                Supongamos que tenemos una moneda no sesgada y que una casa de apuestas ofrece pagos \(Q_c=3\) por Caras y \(Q_s=1.2\) por Secas y que nos vemos en la obligación de apostar todos sus recursos, asignando una proporción \(b_c = b\) a Cara y \(b_s = 1 - b\) a Seca.
+                ¿Cuánto apostarías a cada opción?
+                Si apostamos todo a Caras y sale Secas, perdemos todos.
+                A pesar de que la casa de apuestas pague más por Caras que por Secas, nos vemos en la obligación de apostar algo a Secas también. ¿Pero cuánto?
+                Si nuestros recursos iniciales son \(\omega_0\), los recursos que obtenemos con una apuestas \(b \in [0,1]\) después de una Cara y una Seca es el producto de nuestros resultados.
+
+                \[ \omega_2(b)  = \underbrace{\omega_0 \, \overbrace{b \,  Q_c}^{\text{Cara}}}_{\omega_1(b)} \, \overbrace{(1-b) \, Q_s}^{\text{Seca}} \]
+
+                Queremos la apuesta que maximiza la tasa de crecimiento de los recursos.
+                Si comparamos los recursos de dos apuestas diferentes \(b \neq d \in [0,1]\) luego de obtener \(n_c\) Caras y \(n_s\) Secas, en el tiempo \(T = n_c + n_s\), encontramos que el valor relativo de una apuesta respecto de la otra es independiente de los pagos \(Q_c\) y \(Q_s\) que ofrece la casa de apuestas!
+                </p>
+
+                <p>
+                En efecto, no importa los pagos que ofrezca la casa de apuestas, la apuesta óptima  \(b^{*}\) es la que divide los recursos en la misma proporción que la frecuencia observada, \(b^{*} = n_c/T\), la que en el largo plazo tiende a la frecuencia típica \(\lim_{T \rightarrow \infty} n_c/T = p\).
+                Ésta es la "propiedad epistémica" que le permite a la teoría de la probabilidad adquirir conocimiento sobre el mundo.
+                Si sabemos que la moneda es no sesgada, lo mejor que podemos hacer a largo plazo es dividir los recursos en partes iguales, \(b = p = 0.5\).
+                </p>
+
+                <p>
+                En este caso, sin embargo, no podemos ganar este juego individualmente debido a que las ganancias de 50% con Caras \(1.5 = Q_c \, b\) no alcanza para compensar las caídas de 40\% que sufrimos con Secas \(0.6 = Q_s \, (1-b)\).
+                Incluso con el comportamiento óptimo, individualmente las trayectorias de los recursos caen a una tasa cercana a 5%.
+                A pesar de que la diversificación individual no es suficiente para ganar este juego, la vida encontró estrategias para florecer en casos como estos, reduciendo aun más las fluctuaciones individuales mediante cooperación
+                </p>
+
+                <div class="center">
+                    <img class="responsive-img" src="https://raw.githubusercontent.com/MetodosBayesianos/static/3f0ec047b6425164c18ba2f35333a15574de5975/ejemplos/apuestascoop.svg" alt="apuesta" style="width: 100%">
+                </div>
+
+                <p>
+                En la figura (derecha), las curvas de colores son las trayectoria de los recursos jugando individualmente, y la recta negra es la trayectoria de los recursos individuales jugando en grupos cooperativos grandes.
+                La cooperación le permite a los individuos alcanzar tasas de crecimiento que jamás obtendrían solos.
+                </p>
+
+                <p>
+                Existen otras formas de aumentar la tasa de crecimiento.
+                Por ejemplo, una vez que emerge la cooperación deja de ser necesario reducir las fluctuaciones por diversificación individual y aparece una ventaja a favor de la especialización cooperativa, que permite sacar provecho de la mejor opción disponible, aumentando aún más la tasa de crecimiento de todos los individuos del grupo cooperativo.
+                </p>
 
             </div>
-
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <br>
-        <br>
-        <br>
-        <br>
 
         <br>
         <br>
