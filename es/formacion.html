@@ -62,119 +62,189 @@
             <div class="container" >
             <br><br>
 
-                <h4 class="header col s12 light">Formación en Ciencia de Datos Causal Bayesiana</h4>
+                <h4> Inferencia Bayesiana Causal 1 (IBC1.2024.2)</h4>
+
+                La materia <code>Inferencia Bayesiana Causal 1</code> se imparte como optativa de forma paralela en las licenciaturas de ciencias de datos de la Escuela de Ciencia y Tecnología de la UNSAM y en las licenciatura de ciencia de datos, ciencias de la computación y posgrado de Facultad de Ciencias Exactas y Naturales, UBA.
+
+                <br>
+
+                <table>
+                  <tr>
+                    <td width="50%" align="center"><img src="https://github.com/glandfried/images/blob/master/logos/ecyt.jpeg" width="250"/></td>
+                    <td width="50%" align="center"><img src="https://github.com/glandfried/images/blob/master/logos/UNSAM_blanco.png" width="250"/></td>
+                  </tr>
+                  <tr>
+                    <td width="50%" align="center"><b>Campus Migueletes - EscuelaCyT</b></td>
+                    <td width="50%" align="center"><b>Universidad Nacional de San Martín - Argentina</b></td>
+                  </tr>
+                </table>
+
+                  <br>
+
+                <table>
+                  <tr>
+                    <td width="50%" align="center"><img src="https://github.com/glandfried/images/blob/master/logos/fcen.png" width="250"/></td>
+                    <td width="50%" align="center"><img src="https://github.com/glandfried/images/blob/master/logos/UBA2_blanco.jpg" width="250"/></td>
+                  </tr>
+                  <tr>
+                    <td width="50%" align="center"><b>Pabellón 0 + Inf - FacultadCEN</b></td>
+                    <td width="50%" align="center"><b>Universidad Nacional de Buenos Aires - Argentina</b></td>
+                  </tr>
+                </table>
+
+
+                <h4>Objetivos.</h4>
 
                 <p>
-                REQUISITOS DE INGRESO: Las personas que ingresan deben tener un conocimiento mínimo de programación y matemática. No se requiere conocimientos en probabilidad y estadística.
-                La carga horaria total de la formación es de 144 horas y se dicta en 6 meses.
+                Esta materia está enfocada en la evaluación de argumentos causales alternativos mediante la (aproximación a) la aplicación estricta de las reglas de la probabilidad, el sistema de razonamiento en contextos de incertidumbre. La materia tiene por principal objetivo revisar los métodos desarrollados en las últimas décadas para:
+
+                <ul>
+                <li>&#x2022; Especificar matemáticamente los argumentos causales expresados en lenguaje natural mediante métodos gráficos intuitivos</li>
+                <li>&#x2022; Precisar cómo la estructura causal influye en el flujo de inferencia entre las variables del modelo.</li>
+                <li>&#x2022; Identificar el efecto causal entre variables de un modelo causal en base de datos observacionales (sin intervenciones).</li>
+                <li>&#x2022; Diseñar experimentos que permitan evaluar teorías causales alternativos</li>
+                <li>&#x2022; Seleccionar decisiones óptimas en ciclos de acción-percepción con una naturaleza oculta (simulada).</li>
+                </ul>
+
+                El problema real detrás de este problema de conocimiento es responder preguntas esenciales como <strong>¿Qué acciones generan bienestar?</strong>.
+
                 </p>
 
-                <h5 class="header col s12 light">
-                Fines y objetivos que pretende alcanzar.
-                </h5>
+                <h4>Marco Conceptual</h4>
 
                 <p>
-                Varias décadas de investigación en el campo del aprendizaje automático han dado lugar a una multitud de algoritmos diferentes para resolver una amplia gama de problemas. Para abordar un nuevo proyecto bajo este enfoque, un investigador debe mapear su problema con alguno de los métodos ya existentes. Esto es a menudo complicado por la variedad de algoritmos, siempre diferentes, cada uno con sus especificidades, que requieren generalmente implementaciones de software proveídos por terceros. Si bien este flujo de trabajo tradicional ha sido exitoso, es al mismo tiempo muy inflexible, especialmente para quienes no tienen una formación en matemática y programación.
+
+                <strong>Definición de Inferencia</strong>. Las "verdades" son proposiciones válidas para todas las personas. Las ciencias con datos deben validar sus proposiciones (hipótesis) en sistemas naturales abiertos. ¿Tiene sentido hablar de "verdad" si justamente tenemos incertidumbre respecto de su valor real? Al menos podemos evitar mentir: no afirmar más de lo que se sabe (maximizando incertidumbre) sin ocultar todo aquello que sí se sabe (dada la información disponible o restricciones).
+
+                <br>
+
+                <strong>Definición de Bayes</strong>. Evaluación de todo el espacio de hipótesis mediante la (aproximación a la) aplicación estricta de las reglas de la probabilidad: preservar la creencia previa que sigue siendo compatible con los datos (regla del producto) y predecir con la contribución de todas las hipótesis (regla de la suma). Debido al costo computacional de las reglas de la probabilidad, durante el siglo 20 propusieron una gran cantidad criterios arbitrarios de selección de hipótesis, que genera siempre efectos secundarios indeseados como ocurre con el overfitting. Afortunadamente, la aplicación estricta de las reglas de la probabilidad no exhiben estos problemas. Si lo hicieran, no tendríamos aún un sistema de razonamiento para contexto de incertidumbre.
+
+                <br>
+
+                <strong>Definición de Causal</strong>. El problema real de todo organismo vivo es orientar el ciclo de acción-percepción con la naturaleza en favor de su reproducción, supervivencia y bienestar. Los problemas del conocimiento científico obtienen su relevancia y jerarquía de los objetivos que persigue alcanzar. Luego de una percepción evaluamos los argumentos causales alternativos maximizando la incertidumbre dada la información disponible, y antes de actuar seleccionamos la acción minimizando la incertidumbre esperada en relación al objetivo que perseguimos.
+
                 </p>
+
+                <h4>Programa</h4>
+
+                <h5>Primera parte</h5>
+
+                <h6>Unidad 1. Introducción a la especificación y evaluación de argumentos causales</h6>
+
+                <ul>
+                <li>&#x2022; Explicación causal. Creencias honestas. Reglas de razonamiento en contextos de incertidumbre. Métodos gráficos de especificación de argumentos causales.</li>
+                <li>&#x2022; La naturaleza generativa de los argumentos causales. Evaluación de modelos causales alternativos. Ejemplos identificables y no identificables.</li>
+                <li>&#x2022; Modelos conjugados. Emergencia del overfitting por selección y balance natural por evaluación. Ejemplo con modelos polinomiales de complejidad creciente.</li>
+                <li>&#x2022; Bibliografía sugerida: Bishop 2013 (1-4). Bishop 2006 (1.1-1.3, 2.1-2.3, 3.3-3.4) Otras: Jaynes (paper), Samaja (3.1-3.4), Klimovsky (4), Jaynes (paper)</li>
+                </ul>
+
+                <h6>Unidad 2. Sorpresa: el problema de la comunicación con la realidad</h6>
+
+                <ul>
+                <li>&#x2022; Niveles de base empírica. La estructura invariante del dato. El isomorfismo con los sistemas de comunicación emisor-receptor de la teoría de la información.</li>
+                <li>&#x2022; Evaluación de sistemas de comunicación alternativos en base a su tasa de predicción en el tiempo, expresada en órdenes de magnitud. Entropía y divergencia.</li>
+                <li>&#x2022; Especificación de modelos mediante factor graphs. Descomposición de las reglas de la probabilidad como pasaje de mensajes entre los nodos de las red causal.</li>
+                <li>&#x2022; Bibliografía sugerida:  MacKay (1.1, 2.4-6, 4.1), Kelly (paper). Otras: Klimovsky (2), Samaja (3.5, 3.6.2-5).</li>
+                </ul>
+
+                <h6> Unidad 3. Estructuras causales dinámicas (teorías) y flujo de inferencia.</h6>
+
+                <ul>
+                <li>&#x2022; Estructuras causales dinámicas (teorías). Su especificación mediante gates. Los niveles de razonamiento causal: asociacional, intervencional y contrafactual.</li>
+                <li>&#x2022; Flujo de inferencia en teorías causales: pipe, fork, collider. Apertura y cierre de flujos de inferencia entre regiones de la red causal (d-separation).</li>
+                <li>&#x2022; Los conceptos de potential outcome y do-operator. El efecto de las intervenciones: truncated factorization. Buenos y malos controles. Ejemplos varios.</li>
+                <li>&#x2022; Bibliografía sugerida. Winn (paper), Bishop 2006 (8.2-8.2.2, 8.4-8.4.4, 8.4.7). Neal (2.1, 3, 4.1), Pearl (1).</li>
+                </ul>
+
+                <h6>Unidad 4. Estimación pasiva de efectos causales.</h6>
+
+                <ul>
+                <li>&#x2022; Enfoques de estimación de efecto causal: adjustment formula, inverse probability weighting, propensity scores</li>
+                <li>&#x2022; Métodos para predicción de contrafactuales: twin networks. Método principal para estimación de efectos causales: el criterio backdoor.</li>
+                <li>&#x2022; Otros criterios: frontdoor y do-calculus. Ejemplos de identificación de variables de control. Alternativas: deconfounder, variables instrumentales y otras.</li>
+                <li>&#x2022; Bibliografía sugerida. Pearl (3,6-7), Hernán (parte I), Cinelli (paper), Neal (4, 6, 7.5-7.6).</li>
+                </ul>
+
+                <h5>Segunda parte</h5>
+
+                <h6> Unidad 5. Acción-percepción: el problema de la interacción con la realidad</h6>
+
+                <ul>
+                <li>&#x2022; Persistencia de la vida fuera del equilibrio. Intercambio acción-percepción agente-ambiente. El intento por minimizar la sorpresa esperada.</li>
+                <li>&#x2022; Reformulación ergódica de la teoría de utilidad esperada. Planificación como inferencia. Evaluación de acciones mediante pseudo-posteriors.</li>
+                <li>&#x2022; Control óptimo en Partial Observed Markov Decision Process (POMDP). Ejemplos de selección de acciones. Valor de la información.</li>
+                <li>&#x2022; Bibliografía: Parr (1-3), Schrodinger (4-7),  Peters (paper), Levine (1-2), Pearl (4). Otras: Koller (21)</li>
+                </ul>
+
+                <h6> Unidad 6. Evaluación activa de argumentos causales.</h6>
+
+                <ul>
+                <li>&#x2022; Evaluación de argumentos causales como un juego de interacción acción-percepción con el ambiente. Métodos de Monte Carlo para evaluar teorías.</li>
+                <li>&#x2022; Ejemplos de evaluación de modelos causales a través de datos obtenidos por interacción con una simulador causal subyacente oculto.</li>
+                <li>&#x2022; Planificación del diseño experimental. La emergencia de la estrategia falsacionista como comportamiento óptimo.</li>
+                <li>&#x2022; Bibliografía sugerida. Kass (paper), Pearl (7,9). Hernán (parte II)</li>
+                </ul>
+
+                <h6>Unidad 7. Inferencia causal en series temporales.</h6>
+
+                <ul>
+                <li>&#x2022; Modelos de historia completa. Problemas de usar el último posterior como prior del siguiente evento. Propagación de la información por toda la red histórica causal.</li>
+                <li>&#x2022; Estimación de efecto causal por simulación de contrafactuales. Intervenciones en series temporales. Monte Carlo para series temporales.</li>
+                <li>&#x2022; Evaluación de modelos causales alternativos. Apuestas óptimas en deportes: criterio Kelly, fractional Kelly y otros criterios.</li>
+                <li>&#x2022; Bibliografía sugerida. Brodersen (paper), Dangauthier (paper), Bishop (13.2.3-13.2.4, 13.3), Hernán (parte II).</li>
+                </ul>
+
+                <h6> Unidad 8. Isomorfismo probabilidad-evolución y hackatón "apuestas de vida".</h6>
+
+                <ul>
+                <li>&#x2022; Isomorfismo entre las ecuaciones fundamentales de la teoría de la probabilidad (teorema de Bayes) y la teoría de la evoluición (replicator dynamic).</li>
+                <li>&#x2022; Las emergencia de las variantes que reducen las fluctuaciones por diversificación individual, cooperación, especialización cooperativa y heterogeneidad.</li>
+                <li>&#x2022; Presentación de una competencia de inferencia, intervención, apuestas e intercambios de recursos. Cierre y conclusiones.</li>
+                <li>&#x2022; Bibliografía sugerida. Czegel (paper).</li>
+                </ul>
+
+                <h4> Bibliografía</h4>
 
                 <p>
-                En esas mismas décadas se fueron desarrollando técnicas generales, que permiten aprovechar toda la potencia del aprendizaje automático de forma dinámica e intuitiva, permitiendo crear modelos personalizados a la medida de cada problema específico. A esto le llaman "Aprendizaje automático basado en modelos". Las técnicas las podemos resumir en tres. Una para especificar modelos intuitivamente (1) y otras dos técnicas para resolver la inferencia de forma sencilla, una para cuando podemos resolver la matemática (2) y otra cuando no podemos (3). Especificar modelos y resolver la inferencia es todo lo que hay que hacer en ciencia de datos.
+                Bibliografía en links, en `github.com/glandfried/biblio/releases/tag/teca`, Sci-hub o Libgen.
                 </p>
 
-                <p>
-                <!--Simplemente es aplicar las reglas de la probabilidad: la regla de la suma, hacer las predicciones con la contribución de todas las hipótesis; y la regla del producto, preservar la creencia previa que sigue siendo compatible con el dato. Estas reglas se las conoce hace 250 años y desde entonces no se encontró nada mejor.-->
-                El problema histórico de la teoría de la probabilidad es que nos obliga a evaluar todas y cada una de las hipótesis, lo que es computacionalmente costoso. Desde su descubrimiento se fueron desarrollando soluciones parciales a este problema. A finales del siglo 19 la física estadística logra resolver este problema para un conjunto de problemas. En el siglo 20, el enfoque frecuentista busca desarrollar métodos robustos que seleccionan cuando se selecciona una única hipótesis (e.g. por máxima verosimilitud). No fue posible hacer la inferencia correctamente (evaluando todo el espacio de hipótesis) hasta que en las vísperas del siglo 21 se produce el enorme crecimiento de la capacidad de cómputo.
-                </p>
+                <ul>
+                <li>&#x2022; Bishop. Pattern recognition and machine learning. Springer; 2006</li>
+                <li>&#x2022; Levine S. Reinforcement learning and control as probabilistic inference: Tutorial and review. arXiv. 2018.</li>
+                <li>&#x2022; Parr T, Pezzulo G, Friston KJ. Active Inference. MIT Press; 2022</li>
+                <li>&#x2022; Pearl J. Causality. Cambridge university press; 2009.</li>
+                <li>&#x2022; Peters O. The ergodicity problem in economics. Nature Physics. 2019.</li>
+                <li>&#x2022; Winn J. Causality with gates. In: Artificial Intelligence and Statistics. PMLR; 2012.</li>
+                </ul>
 
-                <h6 class="header col s12 light">
-                Técnicas intuitivas y dinámicas
-                </h6>
+                <h5> Complementaria:</h5>
 
-                <p>
-                A finales del siglo pasado se desarrollaron las 3 técnicas generales son el el centro de la formación en ciencia de datos causal bayesiana.
-                </p>
+                <ul>
+                <li>&#x2022; Bishop. Model-based machine learning. Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences. 2013</li>
+                <li>&#x2022; Brodersen KH, Gallusser F, Koehler J, Remy N, Scott SL. Inferring causal impact using Bayesian structural time-series models. The Annals of Applied Statistics. 2015;</li>
+                <li>&#x2022; Chopin N, Papaspiliopoulos O, et al. An introduction to sequential Monte Carlo. Vol. 4. Springer; 2020.</li>
+                <li>&#x2022; Cinelli C, Forney A, Pearl J. A crash course in good and bad controls. Sociological Methods & Research. 2022</li>
+                <li>&#x2022; Czégel D, Giaffar H, Tenenbaum JB, Szathmáry E. Bayes and Darwin: How replicator populations implement Bayesian computations. BioEssays. 2022.</li>
+                <li>&#x2022; Dangauthier P, Herbrich R, Minka T, Graepel T. Trueskill through time: Revisiting the history of chess. In: Advances in Neural Information Processing Systems; 2008</li>
+                <li>&#x2022; Gronau QF, Sarafoglou A, Matzke D, Ly A, Boehm U, Marsman M, et al. A tutorial on bridge sampling. Journal of mathematical psychology. 2017.</li>
+                <li>&#x2022; Hernán MA, Robins JM. Causal inference: What if. 2020.</li>
+                <li>&#x2022; Jaynes ET. Bayesian methods: General background; 1984.</li>
+                <li>&#x2022; Kass RE, Raftery AE. Bayes factors. Journal of the American Statistical Association. 1995.</li>
+                <li>&#x2022; Kelly jr JL. A New Interpretation of Information Rate. Bell System Technical Journal. 1956</li>
+                <li>&#x2022; Klimovsky G. Las desventuras del conocimiento científico; 1994
+                Koller D, Friedman N. Probabilistic graphical models: principles and techniques. MIT press; 2009.</li>
+                <li>&#x2022; MacKay DJ. Information theory, inference and learning algorithms. Cambridge university press; 2003.</li>
+                <li>&#x2022; McElreath R. Statistical rethinking: A Bayesian course with examples in R and Stan. 2020</li>
+                <li>&#x2022; Neal. Introduction to causal inference. Course Lecture Notes (draft). 2020;</li>
+                <li>&#x2022; Perrakis K, Ntzoufras I, Tsionas EG. On the use of marginal posteriors in marginal likelihood estimation via importance sampling. Computational Statistics & Data Analysis. 2014.</li>
+                <li>&#x2022; Popper K. La lógica de la investigación científica; 1967.</li>
+                <li>&#x2022; Samaja J. Epistemologı́a y metodología: elementos para una teoría de la investigación científica. EUDEBA; 1999.</li>
+                <li>&#x2022; Schrodinger E. ¿Qué es la vida?. Espasa-Calpe. 1948.</li>
+                <li>&#x2022; Vousden W, Farr WM, Mandel I. Dynamic temperature selection for parallel tempering in Markov chain Monte Carlo simulations. Monthly Notices of the Royal Astronomical Society. 2018</li>
+                </ul>
 
-                <p>
-                (1) La primera es la especificación de todas las hipótesis usando modelos causales gráficos. En ellos se dibuja una red, en el cual las variables quedan vinculadas por flechas que representan relaciones causales probabilísticas entre variables. Este método tiene varias ventajas. No sólo es intuitivo, es al mismo tiempo la especificación matemática de la distribución conjunta de todas nuestras hipótesis, el modelo. Pero además, está estrechamente relacionado con los dos métodos para resolver la inferencia.
-                </p>
-                <p>
-                (2) La segunda es el algoritmo de pasaje de mensajes en modelos gráficos (factor graph). Este algoritmo, conocido como belief propagation o sum-product algorithm, simplemente descompone las dos reglas de la probabilidad en pasos elementales: los mensajes que envían las variables (product step), y los mensajes que envían las funciones (sum step). Es el algoritmo más eficiente posible para aplicar las reglas de la probabilidad cuando podemos resolver la matemática. Además se puede ejecutar de forma paralela.
-                </p>
-                <p>
-                (3) La tercera son los lenguajes de programación probabilística. Cuando no podemos resolver la matemática, hoy contamos con algoritmos que nos pueden ayudar a aproximar la inferencia. La programación probabilística nos permite abstraernos de la mayor parte de los detalles detrás de esos algoritmos. Como usuarios, tenemos una sintaxis que nos permite traducir directamente la especificación gráfica del modelo que hicimos en (1). Y se requiere algunos conocimientos mínimos para asegurarse que el resultado que escupe tenga sentido, porque a veces los algoritmos tienen limitaciones.
-                </p>
-
-                <p>
-                En la formación en Ciencia de Datos Causal Bayesiana aprendemos estas técnicas. Además de permitir resolver cualquier problema de ciencia de datos, nos enseña los conceptos fundamentales de la teoría de la probabilidad. Las personas que aprueben esta formación, van a estar capacitadas para formar parte de equipos de ciencia de datos en la industria, especialmente en proyectos sensibles como salud y ciencias forenses, donde realizar una correcta inferencia causal es fundamental.
-                </p>
-
-                <h5 class="header col s12 light">
-                Programa.
-                </h5>
-
-                <p>
-                EVALUACIÓN: A lo largo de toda la formación los estudiantes desarrollarán de forma paralela un aplicación práctica compleja. Al final del curso se tomará un único examen final.
-                </p>
-
-                <h6 class="header col s12 light">
-                &#x2022; Módulo 1: Probabilidad, datos, modelos e inferencia
-                </h6>
-
-                <p>
-                Las 36 horas cubren 6 semanas, con 6 horas por semana, 3 de teórica y 3 de práctica.
-                </p>
-
-                <p><b>Clases teóricas</b>: Definición de verdad en contextos de incertidumbre. Principios de máxima incertidumbre y coherencia. Las reglas de la probabilidad. El teorema de Bayes. Interpretación de la verosimilitud y la evidencia. Introducción a la notación de los métodos gráficos. Algunas distribuciones conjugadas. El problema de la comunicación con la realidad: teoría de la información. La estructura invariante del dato empírico y la equivalencia con el esquema emisor-receptor. Problemas de los enfoques ad-hoc que seleccionan una única hipótesis del espacio: sobreajuste y doble descenso. La justificación teórica de los conjuntos de datos de entrenamiento y testeo, y sus efectos positivos en la práctica.
-                </p>
-
-                <p><b>Clases práctica</b>: Un ejemplo por clase: Monty Hall, beta-binomial, modelo de habilidad-desempeño y regresión lineal bayesiana. Implementación por cuadratura del ejemplo beta-binomia y el modelo de habilidad - desempeño (gaussiana - gaussiana). Comparación con la solución exacta. Evaluación de regresiones lineales bayesianas de complejidad creciente sobre datos simulados. Selección de hipótesis por máxima verosimilitud y el problema del sobreajuste y donde descenso. Evaluación por validación cruzada y comparación con la evaluación de modelos por evidencia. Regresiones lineales sobre datos reales.
-                </p>
-
-                <h6 class="header col s12 light">
-                &#x2022; Módulo 2: Modelos gráficos e inferencia causal.
-                </h6>
-
-                <p>
-                Las 36 horas cubren 6 semanas, con 6 horas por semana, 3 de teórica y 3 de práctica.
-                </p>
-
-                <p><b>Clases teóricas</b>: El alto costo computacional de la aplicación estricta de la probabilidad. Cómputo eficiente en modelos gráficos probabilísticos a través de pasaje de mensaje distribuidos entre nodos de la red bayesiana (algoritmo suma-producto). Flujos de inferencia en modelos causales, dependencia e independencia condicional. Criterio d-separación. El concepto del operador “do”. Estimación de efectos causales con datos observables no experimentales. Controles backdoor y frontdoor.  Evaluación de modelos causales alternativos a través del factor de Bayes y la ventaja natural a favor de los modelos de complejidad intermedia.
-
-                <p><b>Clases práctica</b>:
-                1. Utilizar el algoritmo suma-producto para derivar a mano las dependencias e independencias causales en el modelo alarma-terremoto. Derivar las reglas de d-separación. Determinación de variables de control en estructuras causales genéricas. 2. Simulación de datos a través de modelos causales generativos, evaluación de modelos causales alternativos y estimación de efectos causales.  3. Pasaje de mensajes en el modelo de habilidad exacto, e implementación de la aproximación analítica para solución de filtrado.
-                </p>
-
-                <h6 class="header col s12 light">
-                &#x2022; Módulo 3: Inferencia eficiente y programación probabilística
-                </h6>
-
-                <p>
-                Las 36 horas cubren 6 semanas, con 6 horas por semana, 3 de teórica y 3 de práctica.
-                </p>
-
-                <p><b>Clases teóricas</b>: Modelos mixtos. Divergencia entre distribuciones de probabilidad. Métodos de aproximación analítica por minimización de divergencia: expectation propagation y variational inference. Las ventajas y limitaciones de las aproximaciones analíticas. Métodos de aproximación por muestreo. Las ventajas y desventajas. Markov Chain Monte Carlo Metropolis Algorithm en detalle. Ideas de Hamiltonian Monte Carlo y Sequential Monte Carlo. Ejemplo: diagnósticos de test tipo COVID con independencia y sin independencia.
-                </p>
-
-                <p><b>Clases práctica</b>:
-                1. Implementación del algoritmo de sampleo metropolis. 2. Implementación de modelos mixtos gaussianos en PyMC y selección de modelo a través de sequential monte carlo.  3. Implementación en PyMC de estimación de prevalencia, sensibilidad y especificidad en base a resultados diagnósticos de test tipo PCR y test rápidos.
-                </p>
-
-                <h6 class="header col s12 light">
-                &#x2022; Módulo 4: Series de tiempo y toma de decisiones
-                </h6>
-
-                <p>
-                Las 36 horas cubren 6 semanas, con 6 horas por semana, 3 de teórica y 3 de práctica.
-                </p>
-
-                <p><b>Clases teóricas</b>:
-                Hidden Markov Model (HMM). Conceptos de filtrado y smoothing en series de tiempo. El forward-backward algorithm. El algoritmo suma-producto para HMM. El algoritmo de convergencia por loopy belief propagation. Sistemas lineales dinámicos. Kernel methods. Gaussian processes. Toma de decisiones y maximización de la tasa de crecimiento temporal en procesos multiplicativos.
-                Reformulación ergódica y apuestas óptimas bajo cualquier función de costo.
-                </p>
-
-                <p><b>Clases práctica</b>:
-                1. Implementación propia del "Monty Hall extendido" estimar el sesgo de la persona que esconde el regalo a través del tiempo a través de un modelo dirichlet-multinomial. Comparación de las estimaciones obtenidas mediante filtrado y smoothing. 2. Competencia “inferencia con apuestas”, en el que una casa de apuestas  las personas tienen que apostar 3. Implementación del estimación de habilidad en la industria del video juego (TrueSkill Through Time) a partir de una programa semi terminado. 4. Estimación de habilidades deportivas y apuestas contra una base de datos de los pagos ofrecidos por una casa de apuestas.
-                </p>
 
             </div>
 
